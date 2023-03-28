@@ -1,0 +1,23 @@
+// @TODO-Y: Move to global style / mixins
+=dfx($fd: row, $jc: '', $ai: '', $fw: '')
+  display: flex
+  flex-direction: $fd
+  @if($jc)
+    justify-content: $jc
+  @if($ai)
+    justify-content: $ai
+  @if($fw)
+    justify-content: $fw
+// Component style
+.app-wrapper
+  min-width: 100vw
+  width: 100%
+  min-height: 100vh
+  height: 100%
+  gap: 24px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  app-footer
+    margin-top: auto

@@ -5,9 +5,6 @@ import { Component, OnInit } from '@angular/core'
   templateUrl: 'sign-in.component.html'
 })
 export class SignInComponent implements OnInit {
-  constructor () {
-  }
-
   ngOnInit () {
     console.log('Sign In Component successfully rendered!')
   }

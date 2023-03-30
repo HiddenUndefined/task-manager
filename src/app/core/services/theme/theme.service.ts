@@ -5,7 +5,7 @@ import { DOCUMENT } from '@angular/common'
   providedIn: 'root'
 })
 export class ThemeService {
-  public isLightTheme: boolean = true
+  public isLightTheme = true
 
   constructor (
     @Inject(DOCUMENT) private document: Document

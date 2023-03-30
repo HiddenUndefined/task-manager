@@ -30,7 +30,14 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "semi": ["error", "never"],
+        "quotes": ["warn", "single"],
+        "comma-dangle": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "space-before-function-paren": ["error", "always"],
+        "template-curly-spacing": ["error", "always"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }]
       }
     },
     {

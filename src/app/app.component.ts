@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core'
-import { ThemeService } from '@app/core/services'
+import { ThemeService } from '@app/./core/services'
 
 @Component({
   selector: 'app-root',

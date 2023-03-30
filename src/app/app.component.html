@@ -1,8 +1,25 @@
 <div class="app-wrapper">
+  <!-- Header -->
   <app-header>
+    <!-- Logotype -->
     <h1>Logotype</h1>
+
+    <!-- Navigation -->
+    <nav>
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/auth/sign-in" routerLinkActive="active">Sign In</a>
+      <a routerLink="/auth/sign-up" routerLinkActive="active">Sign Up</a>
+      <a routerLink="/da89su" routerLinkActive="active">Not found</a>
+    </nav>
+
+    <!-- Button: Theme toggle -->
     <button (click)="themeService.toggleTheme()">{{ themeService.isLightTheme ? 'Light' : 'Dark' }} theme</button>
   </app-header>
+
+  <!-- Router -->
   <router-outlet></router-outlet>
+
+  <!-- Footer -->
   <app-footer></app-footer>
 </div>

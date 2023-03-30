@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import {
   HeaderComponent,
   FooterComponent
-} from '@shared/components'
+} from '@app/shared/components'
 
 @NgModule({
   declarations: [

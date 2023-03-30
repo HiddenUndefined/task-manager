@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppRouting } from '@app/app.routing'
 import { AppComponent } from '@app/app.component'
 // Shared
-import { SharedModule } from '@shared/shared.module'
+import { SharedModule } from '@app/shared/shared.module'
 
 @NgModule({
   declarations: [
@@ -16,7 +16,9 @@ import { SharedModule } from '@shared/shared.module'
     SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {
 }

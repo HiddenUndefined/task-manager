@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core'
 import { DOCUMENT } from '@angular/common'
-import { ThemeEnums } from '@core/services/theme/theme.enums'
+import { ThemeEnums, ThemeAttributeName } from './theme.enums'
 
 /**
  * @TODO-Y Consider the possibility of implementing multi-themes.
@@ -47,9 +47,9 @@ export class ThemeService {
   private setThemeOnBody (): void {
     // @TODO-Y Refactor this, need more flexible to change theme class
     if (this.isLightTheme) {
-      this.document.body.classList.remove(ThemeEnums.dark)
+      this.document.body.setAttribute(ThemeAttributeName, ThemeEnums.light)
     } else {
-      this.document.body.classList.add(ThemeEnums.dark)
+      this.document.body.setAttribute(ThemeAttributeName, ThemeEnums.dark)
     }
   }
 }

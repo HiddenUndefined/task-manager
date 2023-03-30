@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing'
 // Spaces
 import { ThemeService } from '@core/services'
-import { ThemeEnums } from './theme.enums'
+import { ThemeEnums, ThemeAttributeName } from './theme.enums'
 
 describe('ThemeService', () => {
   const defaultValues = {
@@ -42,14 +42,14 @@ describe('ThemeService', () => {
     expect(service.isLightTheme).toEqual(!secondPointThemeValue)
   })
 
-  it('theme class in the DOM body should be correct', () => {
+  it('theme attr in the DOM body should be correct', () => {
     // By client system theme
     // #1 Init theme
     service.initThemeBySystem()
     // #2 (optional) Set dark theme
     if (service.isLightTheme) service.toggleTheme()
-    // #3 Check body class
-    const bodyClasses = document.body.classList
-    expect(bodyClasses).toContain(ThemeEnums.dark)
+    // #3 Check body attr
+    const bodyThemeAttribute = document.body.getAttribute(ThemeAttributeName)
+    expect(bodyThemeAttribute).toContain(ThemeEnums.dark)
   })
 })

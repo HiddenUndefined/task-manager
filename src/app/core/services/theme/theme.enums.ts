@@ -1,4 +1,6 @@
 export enum ThemeEnums {
-  light = '',
-  dark = 'dark-theme'
+  light = 'light',
+  dark = 'dark'
 }
+
+export const ThemeAttributeName = 'app-theme'

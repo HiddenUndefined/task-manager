@@ -1,1 +1,3 @@
-<button (click)="themeService.toggleTheme()">{{ themeService.isLightTheme ? 'Light' : 'Dark' }}</button>
+<button (click)="themeService.toggleTheme()">
+  <i-feather name="{{ themeService.isLightTheme ? 'sun' : 'moon' }}"></i-feather>
+</button>

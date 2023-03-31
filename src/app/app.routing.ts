@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { AppRoutingEnum } from '@app/./core/enums'
+import { AppRoutingEnum } from '@core/enums'
 // Pages
-import { NotFoundComponent } from '@app/features/not-found/not-found.component'
-import { RootComponent } from '@app/features/root/root.component'
+import { NotFoundComponent } from '@pages/not-found/not-found.component'
+import { HomeComponent } from '@pages/home/home.component'
 
 const routes: Routes = [
   {
@@ -13,17 +13,17 @@ const routes: Routes = [
   },
   {
     path: AppRoutingEnum.Home,
-    component: RootComponent
-    // loadChildren: () => import('@features/root').then(m => m.RootModule)
+    component: HomeComponent
+    // loadChildren: () => import('@pages/root').then(m => m.RootModule)
   },
   {
     path: AppRoutingEnum.About,
     // component: AboutComponent
-    loadChildren: () => import('@app/features/about').then(m => m.AboutModule)
+    loadChildren: () => import('@pages/about').then(m => m.AboutModule)
   },
   {
     path: AppRoutingEnum.Auth,
-    loadChildren: () => import('@app/features/auth').then(m => m.AuthModule)
+    loadChildren: () => import('@pages/auth').then(m => m.AuthModule)
   },
   {
     path: '**',

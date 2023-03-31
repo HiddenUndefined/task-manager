@@ -1,13 +1,5 @@
-// @TODO-Y: Move to global style / mixins
-=dfx($fd: row, $jc: '', $ai: '', $fw: '')
-  display: flex
-  flex-direction: $fd
-  @if($jc != '')
-    justify-content: $jc
-  @if($ai != '')
-    align-items: $ai
-  @if($fw != '')
-    flex-wrap: $fw
+@import "mixins"
+
 // Component style
 .app-wrapper
   min-width: 100vw
@@ -15,20 +7,7 @@
   min-height: 100vh
   height: 100%
   gap: 24px
-  +dfx(column, center, center)
-  // Header
-  app-header
-    max-width: 1080px
-    width: 100%
-    +dfx(row, space-between, center)
-    nav
-      gap: 12px
-      +dfx(row, space-between, center)
-      a
-        color: var(--color-text)
-        &:hover,
-        &.active
-          color: var(--color-primary)
+  +dfx(column, center, stretch)
   // Footer
   app-footer
     margin-top: auto

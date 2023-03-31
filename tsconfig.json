@@ -21,9 +21,12 @@
     "useDefineForClassFields": false,
     "paths": {
       "@app/*": ["./src/app/*"],
+      "@components/*": ["./src/app/components/*"],
       "@core/*": ["./src/app/core/*"],
+      "@pages/*": ["./src/app/pages/*"],
       "@features/*": ["./src/app/features/*"],
-      "@shared/*": ["./src//app/shared/*"]
+      "@shared/*": ["./src/app/shared/*"],
+      "@widgets/*": ["./src/app/widgets/*"]
     },
     "lib": [
       "ESNEXT",

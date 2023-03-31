@@ -1,1 +1,12 @@
-<ng-content></ng-content>
+<header>
+  <!-- Logotype -->
+  <h1>Logotype</h1>
+
+  <!-- Navigation -->
+  <nav>
+    <a *ngFor="let link of navLinksCollection" routerLink="{{ link.path }}" routerLinkActive="active">{{ link.name }}</a>
+  </nav>
+
+  <!-- Button: Theme toggle -->
+  <button>{{ true ? 'Light' : 'Dark' }} theme</button>
+</header>

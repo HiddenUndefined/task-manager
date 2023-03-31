@@ -11,15 +11,15 @@ const routes: Routes = [
     children: [
       {
         path: AuthRouterEnum.SignIn,
-        loadChildren: () => import('@app/features/auth/pages/sign-in').then((m) => m.SignInModule)
+        loadChildren: () => import('@app/pages/auth/pages/sign-in').then((m) => m.SignInModule)
       },
       {
         path: AuthRouterEnum.SignUp,
-        loadChildren: () => import('@app/features/auth/pages/sign-up').then((m) => m.SignUpModule)
+        loadChildren: () => import('@app/pages/auth/pages/sign-up').then((m) => m.SignUpModule)
       },
       {
         path: AuthRouterEnum.ForgotPassword,
-        loadChildren: () => import('@app/features/auth/pages/forgot-password').then((m) => m.ForgotPasswordModule)
+        loadChildren: () => import('@app/pages/auth/pages/forgot-password').then((m) => m.ForgotPasswordModule)
       },
       {
         path: '**',

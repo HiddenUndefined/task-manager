@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 // Space
-import { RootComponent } from './root.component'
-import { RootRouting } from './root.routing'
+import { HomeComponent } from './home.component'
+import { HomeRouting } from './home.routing'
 
 @NgModule({
   declarations: [
-    RootComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
-    RootRouting
+    HomeRouting
   ]
 })
-export class RootModule {
+export class HomeModule {
 }

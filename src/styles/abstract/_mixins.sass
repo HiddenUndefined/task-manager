@@ -23,17 +23,22 @@
   &::-webkit-scrollbar-thumb
     display: none !important
 // Flexbox
-=dfx($fd: row, $jc: flex-start, $ai: flex-start, $wr: nowrap)
+=dfx($fd: row, $jc: '', $ai: '', $fw: '')
   display: flex
   flex-direction: $fd
-  justify-content: $jc
-  align-items: $ai
-  flex-wrap: $wr
+  @if($jc != '')
+    justify-content: $jc
+  @if($ai != '')
+    align-items: $ai
+  @if($fw != '')
+    flex-wrap: $fw
 // Text
-=text($fsz: 16px, $lh: 1.4, $fw: 500, $ta: left, $tt: none, $td: none)
+=text($fsz: 16px, $lh: 1.4, $fw: 500, $ta: left, $tt: '', $td: '')
   font-weight: $fw
   font-size: $fsz
   line-height: $lh
   text-align: $ta
-  text-transform: $tt
-  text-decoration: $td
+  @if($tt != '')
+    text-transform: $tt
+  @if($td != '')
+    text-decoration: $td

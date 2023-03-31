@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/index.sass"
+              "src/styles.sass"
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
@@ -99,7 +99,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/index.sass"
+              "src/styles.sass"
             ],
             "scripts": [],
             "stylePreprocessorOptions": {

@@ -23,6 +23,7 @@
       "@app/*": ["./src/app/*"],
       "@components/*": ["./src/app/components/*"],
       "@core/*": ["./src/app/core/*"],
+      "@layouts/*": ["./src/app/layouts/*"],
       "@pages/*": ["./src/app/pages/*"],
       "@features/*": ["./src/app/features/*"],
       "@shared/*": ["./src/app/shared/*"],

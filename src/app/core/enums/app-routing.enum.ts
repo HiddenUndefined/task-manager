@@ -1,5 +1,4 @@
 export enum AppRoutingEnum {
-  Root = '',
   Home = 'home',
   About = 'about',
   Auth = 'auth',

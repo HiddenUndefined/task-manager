@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppRouting } from '@app/app.routing'
 import { AppComponent } from '@app/app.component'
 // Shared
-import { SharedModule } from '@app/shared/shared.module'
+import { SharedModule } from '@shared/shared.module'
+// Layouts
+import { LayoutsModule } from '@layouts/layouts.module'
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { SharedModule } from '@app/shared/shared.module'
   imports: [
     BrowserModule,
     AppRouting,
+    LayoutsModule,
     SharedModule
   ],
   providers: [],

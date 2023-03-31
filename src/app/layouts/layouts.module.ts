@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router'
 // Global
 import { SharedModule } from '@app/shared'
 // Spaces
-import { AuthLayoutComponent } from './auth/auth.component'
-import { WebsiteLayoutComponent } from './website/website.component'
-import { NotFoundLayoutComponent } from './not-found/not-found.component'
+import { AuthLayoutComponent } from './auth'
+import { WebsiteLayoutComponent } from './website'
+import { NotFoundLayoutComponent } from './not-found'
 
 @NgModule({
   declarations: [

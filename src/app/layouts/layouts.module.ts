@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule } from '@angular/router'
 // Global
-import { SharedModule } from '@app/shared'
+import { SharedModule } from '@shared'
+import { WidgetsModule } from '@widgets'
 // Spaces
 import { AuthLayoutComponent } from './auth'
 import { WebsiteLayoutComponent } from './website'
@@ -17,7 +18,8 @@ import { NotFoundLayoutComponent } from './not-found'
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    WidgetsModule
   ],
   exports: [
     RouterModule

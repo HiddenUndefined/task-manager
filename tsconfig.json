@@ -20,13 +20,21 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "paths": {
+      "@app": ["./src/app"],
       "@app/*": ["./src/app/*"],
+      "@components": ["./src/app/components"],
       "@components/*": ["./src/app/components/*"],
+      "@core": ["./src/app/core"],
       "@core/*": ["./src/app/core/*"],
+      "@layouts": ["./src/app/layouts"],
       "@layouts/*": ["./src/app/layouts/*"],
+      "@pages": ["./src/app/pages"],
       "@pages/*": ["./src/app/pages/*"],
+      "@features": ["./src/app/features"],
       "@features/*": ["./src/app/features/*"],
+      "@shared": ["./src/app/shared"],
       "@shared/*": ["./src/app/shared/*"],
+      "@widgets": ["./src/app/widgets"],
       "@widgets/*": ["./src/app/widgets/*"]
     },
     "lib": [

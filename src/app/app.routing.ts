@@ -10,8 +10,6 @@ import { NotFoundLayoutComponent } from '@layouts/not-found/not-found.component'
 const routes: Routes = [
   {
     path: '',
-    // redirectTo: AppRoutingEnum.Home,
-    // pathMatch: 'full',
     component: WebsiteLayoutComponent,
     children: [
       {
@@ -25,8 +23,8 @@ const routes: Routes = [
       },
       {
         path: AppRoutingEnum.About,
-        // component: AboutComponent
-        loadChildren: () => import('@pages/about').then(m => m.AboutModule)
+        // loadChildren: () => import('@pages/about').then(m => m.AboutModule)
+        loadChildren: () => import('@pages/about/about.routing').then(c => c.AboutRouting)
       }
     ]
   },
@@ -39,7 +37,6 @@ const routes: Routes = [
         loadChildren: () => import('@pages/auth').then(m => m.AuthModule)
       }
     ]
-    // loadChildren: () => import('@pages/auth').then(m => m.AuthModule)
   },
   {
     path: '**',

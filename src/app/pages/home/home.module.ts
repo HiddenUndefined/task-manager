@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common'
 // Space
 import { HomeComponent } from './home.component'
 import { HomeRouting } from './home.routing'
+import { WidgetsModule } from '@widgets'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { HomeRouting } from './home.routing'
   ],
   imports: [
     CommonModule,
-    HomeRouting
+    HomeRouting,
+    WidgetsModule
   ]
 })
 export class HomeModule {

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+// Global
+import { WidgetsModule } from '@widgets'
 // Spaces
 import { NotFoundComponent } from './not-found.component'
 
@@ -8,7 +9,10 @@ import { NotFoundComponent } from './not-found.component'
     NotFoundComponent
   ],
   imports: [
-    CommonModule
+    WidgetsModule
+  ],
+  exports: [
+    NotFoundComponent
   ]
 })
 export class NotFoundModule {

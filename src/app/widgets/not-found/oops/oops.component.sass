@@ -1,0 +1,22 @@
+@import "helpers"
+
+.widget-oops
+  max-width: var(--content-max-width)
+  width: 100%
+  min-height: 680px
+  +dfx(column, center, center)
+  // Code
+  h2
+    color: var(--color-text)
+    +text(var(--font-size-h2), var(--font-weight-bold))
+  // Title
+  strong
+    color: var(--color-text)
+    +text(var(--font-size-h1), var(--font-weight-bold))
+    margin-bottom: var(--margin-normal)
+  // Link
+  a
+    color: var(--color-primary)
+    +text(var(--font-size-text), var(--font-weight-normal))
+    &:hover
+      text-decoration: underline

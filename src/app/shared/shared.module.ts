@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core'
-import {
-  HeaderComponent,
-  FooterComponent
-} from '@shared/components'
+// UI
+import { UiModule } from '@shared/ui'
+// Vendors
+import { FeatherIconsModule } from '@shared/vendor/feather-icons/feather-icons.module'
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent
+  imports: [
+    UiModule,
+    FeatherIconsModule
   ],
   exports: [
-    HeaderComponent,
-    FooterComponent
+    UiModule,
+    FeatherIconsModule
   ]
 })
 export class SharedModule {

@@ -1,0 +1,15 @@
+@import "src/styles/abstract/helpers"
+
+header
+  max-width: 1080px
+  width: 100%
+  margin: 0 auto
+  +dfx(row, space-between, center)
+  nav
+    gap: 12px
+    +dfx(row, space-between, center)
+    a
+      color: var(--color-text)
+      &:hover,
+      &.active
+        color: var(--color-primary)

@@ -1,0 +1,12 @@
+<header>
+  <!-- Logotype -->
+  <h1>Logotype</h1>
+
+  <!-- Navigation -->
+  <nav>
+    <a *ngFor="let link of navLinksCollection" routerLink="{{ link.path }}" routerLinkActive="active">{{ link.name }}</a>
+  </nav>
+
+  <!-- Button: Theme toggle -->
+  <app-theme-toggle-button></app-theme-toggle-button>
+</header>

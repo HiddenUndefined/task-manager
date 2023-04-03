@@ -1,0 +1,44 @@
+// Max width breakpoint
+=max-w($w)
+  @media screen and (max-width: $w)
+    @content
+// Min width breakpoint
+=min-w($w)
+  @media screen and (min-width: $w)
+    @content
+// Min & max size
+=mmSize($w: 100%, $h: 100%)
+  min-width: $w
+  max-width: $w
+  width: $w
+  min-height: $h
+  max-height: $h
+  height: $h
+// Hid scrollbar
+=hidScrollbar()
+  &::-webkit-scrollbar
+    display: none !important
+  &::-webkit-scrollbar-track
+    display: none !important
+  &::-webkit-scrollbar-thumb
+    display: none !important
+// Flexbox
+=dfx($fd: row, $jc: '', $ai: '', $fw: '')
+  display: flex
+  flex-direction: $fd
+  @if($jc != '')
+    justify-content: $jc
+  @if($ai != '')
+    align-items: $ai
+  @if($fw != '')
+    flex-wrap: $fw
+// Text
+=text($fsz: 16px, $lh: 1.4, $fw: 500, $ta: left, $tt: '', $td: '')
+  font-weight: $fw
+  font-size: $fsz
+  line-height: $lh
+  text-align: $ta
+  @if($tt != '')
+    text-transform: $tt
+  @if($td != '')
+    text-decoration: $td

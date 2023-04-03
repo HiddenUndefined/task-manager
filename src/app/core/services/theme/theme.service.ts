@@ -1,37 +1,55 @@
 import { Inject, Injectable } from '@angular/core'
 import { DOCUMENT } from '@angular/common'
+import { ThemeEnums, ThemeAttributeName } from './theme.enums'
 
+/**
+ * @TODO-Y Consider the possibility of implementing multi-themes.
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  public isLightTheme: boolean = true
+  public isLightTheme = true
 
   constructor (
     @Inject(DOCUMENT) private document: Document
   ) {
   }
 
+  /**
+   * Theme toggle method, revert isLightTheme
+   * @public
+   */
   public toggleTheme (): void {
+    // Update theme status
     this.isLightTheme = !this.isLightTheme
+    // Update theme class on the DOM body
     this.setThemeOnBody()
   }
 
+  /**
+   * Theme initialization by system theme
+   * @public
+   */
   public initThemeBySystem (): void {
     // Detect system theme is dark
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const systemThemeIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     // Set value to light theme status
-    this.isLightTheme = !isDark
+    this.isLightTheme = !systemThemeIsDark
     // Set theme on body tag
     this.setThemeOnBody()
   }
 
+  /**
+   * Update theme class on the DOM body
+   * @private
+   */
   private setThemeOnBody (): void {
+    // @TODO-Y Refactor this, need more flexible to change theme class
     if (this.isLightTheme) {
-      this.document.body.classList.remove('dark-theme')
-    }
-    else {
-      this.document.body.classList.add('dark-theme')
+      this.document.body.setAttribute(ThemeAttributeName, ThemeEnums.light)
+    } else {
+      this.document.body.setAttribute(ThemeAttributeName, ThemeEnums.dark)
     }
   }
 }

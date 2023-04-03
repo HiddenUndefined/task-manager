@@ -37,7 +37,9 @@
         "space-in-parens": ["error", "never"],
         "space-before-function-paren": ["error", "always"],
         "template-curly-spacing": ["error", "always"],
-        "brace-style": ["error", "1tbs", { "allowSingleLine": true }]
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-empty-function": "off"
       }
     },
     {

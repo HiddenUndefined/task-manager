@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
 // Spaces
 import { ForgotPasswordComponent } from './forgot-password.component'
 import { ForgotPasswordRouting } from './forgot-password.routing'
@@ -9,7 +8,6 @@ import { ForgotPasswordRouting } from './forgot-password.routing'
     ForgotPasswordComponent
   ],
   imports: [
-    CommonModule,
     ForgotPasswordRouting
   ]
 })

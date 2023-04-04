@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterLink, RouterLinkActive } from '@angular/router'
-import { CommonModule } from '@angular/common'
+// Shared
+import { SharedModule } from '@shared'
 // Features
 import { FeaturesModule } from '@features'
 // Components
@@ -19,9 +20,9 @@ const widgets = [
 
 @NgModule({
   imports: [
-    CommonModule,
     RouterLink,
     RouterLinkActive,
+    SharedModule,
     FeaturesModule,
     NotFoundWidgetsModule
   ],

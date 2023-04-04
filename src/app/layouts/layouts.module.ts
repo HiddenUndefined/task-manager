@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
 import { RouterModule } from '@angular/router'
 // Global
 import { SharedModule } from '@shared'
@@ -16,7 +15,6 @@ import { NotFoundLayoutComponent } from './not-found'
     NotFoundLayoutComponent
   ],
   imports: [
-    CommonModule,
     RouterModule,
     SharedModule,
     WidgetsModule

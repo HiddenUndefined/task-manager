@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
 // Spaces
 import { SignInComponent } from './sign-in.component'
 import { SignInRouting } from './sign-in.routing'
@@ -9,7 +8,6 @@ import { SignInRouting } from './sign-in.routing'
     SignInComponent
   ],
   imports: [
-    CommonModule,
     SignInRouting
   ]
 })

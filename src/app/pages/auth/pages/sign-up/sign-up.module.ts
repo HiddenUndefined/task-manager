@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
 // Space
 import { SignUpComponent } from './sign-up.component'
 import { SignUpRouting } from './sign-up.routing'
@@ -9,7 +8,6 @@ import { SignUpRouting } from './sign-up.routing'
     SignUpComponent
   ],
   imports: [
-    CommonModule,
     SignUpRouting
   ]
 })

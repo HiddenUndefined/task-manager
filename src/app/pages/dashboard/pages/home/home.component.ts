@@ -1,12 +1,10 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-home-page',
+  selector: 'app-dashboard-home-page',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.sass']
 })
 export class HomeComponent {
-  public clickTest () {
-    alert('It\'s alert from HomeComponent')
-  }
+
 }

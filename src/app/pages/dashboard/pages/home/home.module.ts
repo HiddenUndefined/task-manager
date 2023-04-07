@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core'
-// Widgets
-import { WidgetsModule } from '@widgets'
-// Space
+// Spaces
 import { HomeComponent } from './home.component'
 import { HomeRouting } from './home.routing'
 
@@ -10,8 +8,7 @@ import { HomeRouting } from './home.routing'
     HomeComponent
   ],
   imports: [
-    HomeRouting,
-    WidgetsModule
+    HomeRouting
   ]
 })
 export class HomeModule {

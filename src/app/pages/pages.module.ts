@@ -6,6 +6,7 @@ import { WidgetsModule } from '@widgets'
 import { HomeModule } from '@pages/home'
 import { AboutModule } from '@pages/about'
 import { AuthModule } from '@pages/auth'
+import { DashboardModule } from '@pages/dashboard'
 import { NotFoundModule } from '@pages/not-found'
 
 @NgModule({
@@ -17,6 +18,7 @@ import { NotFoundModule } from '@pages/not-found'
     HomeModule,
     AboutModule,
     AuthModule,
+    DashboardModule,
     NotFoundModule
   ]
 })

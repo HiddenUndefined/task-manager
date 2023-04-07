@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-sign-up',
+  selector: 'app-auth-sign-up-page',
   templateUrl: 'sign-up.component.html'
 })
 export class SignUpComponent implements OnInit {

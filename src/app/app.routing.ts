@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppRoutingEnum } from '@core/enums'
 // Pages
 import { NotFoundComponent } from '@pages/not-found/not-found.component'
-import { WebsiteLayoutComponent } from '@app/layouts/website/website.component'
-import { AuthLayoutComponent } from '@app/layouts/auth/auth.component'
-import { NotFoundLayoutComponent } from '@layouts/not-found/not-found.component'
+// Layouts
+import { WebsiteLayoutComponent } from '@layouts/website'
+import { AuthLayoutComponent } from '@layouts/auth'
+import { NotFoundLayoutComponent } from '@layouts/not-found'
+import { DashboardLayoutComponent } from '@layouts/dashboard'
 
 const routes: Routes = [
   {
@@ -35,6 +37,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('@pages/auth').then(m => m.AuthModule)
+      }
+    ]
+  },
+  {
+    path: AppRoutingEnum.Dashboard,
+    component: DashboardLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('@pages/dashboard').then(m => m.DashboardModule)
       }
     ]
   },
